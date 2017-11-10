@@ -1,6 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Pacifico');
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
 }
+
+html {
+  font-family: "Libre Barcode 39 Text", "Pacifico",sans-serif;
+}
+
+body {
+  padding-top: 50px;
+}
+
+/* NAV STYLING ===================
+==================================*/
+
+.top-nav {
+  background: #000;
+  height: 50px; /* delete when content is addded */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.landing {
+  background-image: url("../images/blue-landing-large.jpeg");
+  background-size: cover; /*stretches background to cover the immediate container; */
+  background-position: center; /* picks the focus of the background displayed */
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center; /*determines how content inside this container is arraigned vertically, while justify content determines how the content is arraigned horizontically */
+
+  color: #e2e0de;
+  /* color is a property inherited from parent to child */
+}
+
+/* vh = viewport height; vw = viewport width*/
+
+/*When stylizing with fonts, use fonts families to set a hierarchy of fonts styles, starting with preferred fonts first, then more widely adopted fonts afterwards. Fonts are also inherited from parent to child*/
